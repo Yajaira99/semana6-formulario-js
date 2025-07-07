@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #6b73ff, #000dff);
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.6rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+
+input.valid {
+  border-color: #28a745;
+  background-color: #e6f9ec;
+}
+
+input.invalid {
+  border-color: #dc3545;
+  background-color: #fceaea;
+}
+
+small.message {
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
+  display: block;
+}
+
+small.error {
+  color: #dc3545;
+}
+
+small.success {
+  color: #28a745;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.8rem;
+}
+
+button {
+  padding: 0.6rem 1.4rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#btnEnviar {
+  background-color: #28a745;
+  color: white;
+}
+
+#btnEnviar:disabled {
+  background-color: #a7d1a9;
+  cursor: not-allowed;
+}
+
+#btnReiniciar {
+  background-color: #dc3545;
+  color: white;
+}
+
+#btnReiniciar:hover {
+  background-color: #b02a37;
+}
